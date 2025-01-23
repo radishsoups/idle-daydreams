@@ -5,6 +5,7 @@ const pageThree = document.querySelector('#btnThree');
 const image = document.querySelector('#bgImage');
 const picture = document.querySelector('#behind');
 const a = document.querySelector('#link');
+const text = document.querySelector('#prompt');
 
 function replace() {
     image.src = 'navigationImages/bgTransparent.png';

@@ -40,6 +40,10 @@ canvas {
     overflow: hidden;
 }
 
+#prompt {
+    opacity: 0;
+}
+
 #nav {
     width: auto;
     height: 20vh;
@@ -65,9 +69,27 @@ canvas {
     background-size: 10%;
 }
 
+@keyframes navBtn {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
 #btnOne {
     width: auto;
     height: 70%;
+}
+
+#btnOne:hover {
+    animation: navBtn 1.5s linear infinite;
 }
 
 #btnTwo {
@@ -75,9 +97,17 @@ canvas {
     height: 60%;
 }
 
+#btnTwo:hover {
+    animation: navBtn 1.5s linear infinite;
+}
+
 #btnThree {
     width: auto;
     height: 60%;
+}
+
+#btnThree:hover {
+    animation: navBtn 1.5s linear infinite;
 }
 
 #bgImage {
